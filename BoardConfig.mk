@@ -217,10 +217,7 @@ USE_SENSOR_MULTI_HAL := true
 # Shim
 TARGET_LD_SHIM_LIBS := \
     /system/vendor/bin/adspd|libshim_adsp.so \
-    /system/lib/lib_motsensorlistener.so|libsensor.so \
-	/system/lib/libjustshoot.so|libshims_camera.so \
-	/system/vendor/lib/libguy.so|libshim_camera_hal.so \
-	/system/vendor/lib64/libmdmcutback.so|libqsap_shim.so
+    /system/vendor/lib64/libmdmcutback.so|libqsap_shim.so
 
 # Wifi
 BOARD_HAS_QCOM_WLAN              := true
