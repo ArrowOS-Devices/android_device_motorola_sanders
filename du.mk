@@ -19,14 +19,14 @@
 $(call inherit-product, device/motorola/sanders/full_sanders.mk)
 
 # Inherit some common AospExtended stuff.
-$(call inherit-product, vendor/aosp/common.mk)
+$(call inherit-product, vendor/du/config/common_full_phone.mk)
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := sanders
-PRODUCT_NAME := aosp_sanders
+PRODUCT_NAME := du_sanders
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
 
@@ -34,4 +34,3 @@ PRODUCT_SYSTEM_PROPERTY_BLACKLIST := ro.product.model
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="Moto G5S Plus"
-    DEVICE_MAINTAINERS="Keertesh"
