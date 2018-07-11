@@ -24,7 +24,7 @@ if ! [ "$sku" = "XT1802" ]; then
     rm /system/vendor/lib64/libdtvtuner.so
     rm /system/vendor/lib/libdtvhal.so
     rm /system/vendor/lib64/libdtvhal.so
-    rm -r /system/vendor/app/DTVPlayer
-    rm -r /system/vendor/app/DTVService
+    rm -r /system/app/DTVPlayer
+    rm -r /system/priv-app/DTVService
 fi
 
