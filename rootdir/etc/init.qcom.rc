@@ -831,6 +831,10 @@ service fm_dl /system/bin/sh /system/vendor/etc/init.qcom.fm.sh
     disabled
     oneshot
 
+on property:crypto.driver.load=1
+     insmod /system/lib/modules/qce.ko
+     insmod /system/lib/modules/qcedev.ko
+
 service atfwd /system/vendor/bin/ATFWD-daemon
     class late_start
     user system
