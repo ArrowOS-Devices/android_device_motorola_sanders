@@ -9,7 +9,7 @@
     "target_path": "vendor/motorola/sanders",
   },  
   {
-    "repository":  "android_packages_resources_devicesettings",
+    "repository":  "packages_resources_devicesettings",
     "target_path": "packages/resources/devicesettings"
   }
 ]
