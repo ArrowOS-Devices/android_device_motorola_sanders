@@ -19,14 +19,14 @@
 $(call inherit-product, device/motorola/sanders/full_sanders.mk)
 
 # Inherit some common AospExtended stuff.
-$(call inherit-product, vendor/du/config/common_full_phone.mk)
+$(call inherit-product, vendor/arrow/config/common.mk)
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := sanders
-PRODUCT_NAME := du_sanders
+PRODUCT_NAME := arrow_sanders
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
 
