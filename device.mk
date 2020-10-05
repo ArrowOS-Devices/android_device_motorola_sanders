@@ -486,7 +486,8 @@ PRODUCT_PACKAGES += \
     libcurl \
     libQWiFiSoftApCfg \
     tcpdump \
-    WifiOverlay
+    WifiOverlay \
+    TetheringOverlay
 
 # Wifi Symlinks
 PRODUCT_PACKAGES += \
