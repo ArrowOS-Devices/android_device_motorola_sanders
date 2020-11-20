@@ -296,4 +296,3 @@ on property:sys.wifi.tethering=true
 
 on property:sys.wifi.tethering=false
     write /sys/class/net/rmnet_data0/queues/rx-0/rps_cpus ${sys.rmnet_vnd.rps_mask}
-    write /sys/module/wlan/parameters/fwpath apdown
