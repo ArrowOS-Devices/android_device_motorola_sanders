@@ -151,7 +151,10 @@ PRODUCT_PACKAGES += \
     libgenlock \
     libtinyxml \
     libdisplayconfig \
-    libqdMetaData.system
+    libqdMetaData.system \
+    libqdMetaData.vendor \
+    libhwbinder \
+    libhwbinder.vendor
 
 PRODUCT_PACKAGES += \
     vendor.display.color@1.0-service \
