@@ -17,7 +17,6 @@ type persist_camera_file, file_type, data_file_type, core_data_file_type;
 type persist_antcap_file, file_type, data_file_type, core_data_file_type;
 type pds_telephony_file, file_type, data_file_type, core_data_file_type;
 type pds_omadm_file, file_type, data_file_type, core_data_file_type;
-type persist_audio_file, file_type, data_file_type, core_data_file_type;
 
 type moodle_data_file, file_type, data_file_type, core_data_file_type;
 type cutback_data_file, file_type, data_file_type, core_data_file_type;
@@ -28,11 +27,11 @@ type akmd_data_file, file_type, data_file_type, core_data_file_type;
 
 type wapi_supplicant_data_file, file_type, data_file_type, core_data_file_type;
 
+# NETD
+type netd_socket, file_type, data_file_type, core_data_file_type;
+
 # RIL
 type netmgr_data_file, file_type, data_file_type, core_data_file_type;
-
-#test firmware
-type firmware_file, file_type;
 
 # sysfs
 #type sysfs_adsp, fs_type, sysfs_type;
@@ -57,9 +56,14 @@ type perfd_data_file, file_type, data_file_type, core_data_file_type;
 type proc_kernel_sched, fs_type;
 type sysfs_power_management, sysfs_type, fs_type;
 type proc_touchpanel, fs_type;
-type adsprpcd_file, file_type;
 
 type camera_socket, file_type, data_file_type, core_data_file_type;
 type sysfs_screen_off_gestures, fs_type, sysfs_type, mlstrustedobject;
-type avb_file, file_type;
-type sysfs_fpc_proximity, sysfs_type, fs_type;
+
+# Themes
+type theme_data_file, file_type, data_file_type;
+
+# WCNSS
+type wcnss_data_file, file_type, data_file_type;
+
+type persist_audio_file, file_type, vendor_persist_type;

@@ -1,3 +1,7 @@
-# binder_call(qseeproxy, servicemanager);
-#allow qseeproxy self:process getattr;
-# allow qseeproxy qseeproxy_service_old:service_manager { add find };
+allow qseeproxy servicemanager:binder { call transfer };
+
+typeattribute qseeproxy binder_in_vendor_violators;
+
+allow qseeproxy binder_device:chr_file { ioctl open read write };
+
+allow qseeproxy qseeproxy_service_old:service_manager add;
