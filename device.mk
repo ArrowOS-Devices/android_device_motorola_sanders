@@ -218,10 +218,6 @@ PRODUCT_PACKAGES += \
     android.hidl.manager@1.0 \
     android.hidl.manager@1.0_system
 
-# HW crypto
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
-
 # IDC
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/idc/uinput-fpc.idc:$(TARGET_COPY_OUT_SYSTEM)/usr/idc/uinput-fpc.idc
