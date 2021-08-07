@@ -1033,3 +1033,19 @@ on property:sys.boot_completed=1
     # Tunables
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "interactive"
     write /sys/devices/system/cpu/cpufreq/interactive/use_sched_load 0
+
+service logger /system/bin/logcat -b all -D -f /cache/boot_log.txt
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+
+on post-fs-data
+    # Clear existing log and start the service
+    rm /cache/boot_log.txt
+    start logger
+
+on property:sys.boot_completed=1
+    # Stop the logger service
+    stop logger
